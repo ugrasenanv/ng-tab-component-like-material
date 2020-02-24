@@ -1,0 +1,13 @@
+<ul class="nav nav-tabs">
+  <li class="nav-item" *ngFor="let tab of tabs">
+    <a class="nav-link" style="
+    border: transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+" [class.active]="tab.active" href="#" (click)="select(tab)">{{ tab.heading }}</a>
+  </li>
+</ul>
+
+<div class="p-2">
+  <ng-content></ng-content>
+</div>
